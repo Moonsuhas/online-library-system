@@ -1,0 +1,90 @@
+/* ---------------------- */
+/* Root Variables & Theme */
+/* ---------------------- */
+:root {
+  /* Primary Colors */
+  --primary-color: #6366f1;       /* Indigo 500 */
+  --primary-hover: #4f46e5;       /* Indigo 600 */
+  --secondary-color: #f43f5e;     /* Slightly different pink for uniqueness */
+
+  /* Backgrounds */
+  --background-dark: #905882;     /* Slate 900 */
+  --background-card: #26303d;     /* Slightly lighter Slate 800 */
+
+  /* Text Colors */
+  --text-main: #f8fafc;           /* Main text color */
+  --text-muted: #94a3b8;          /* Muted text color */
+
+  /* Glass/Translucent Effect */
+  --glass-bg: rgba(31, 41, 55, 0.75); /* Slight tweak to opacity */
+  --glass-border: rgba(255, 255, 255, 0.12);
+
+  /* Fonts */
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+               'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* General Theme */
+  color-scheme: dark;
+  color: var(--text-main);
+  background-color: var(--background-dark);
+
+  /* Font rendering improvements */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------------- */
+/* Global Styles */
+/* ---------------------- */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-dark);
+  color: var(--text-main);
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+  margin-top: 0;
+}
+
+/* Buttons */
+button {
+  border-radius: 10px; /* slightly different */
+  border: 1px solid transparent;
+  padding: 0.65em 1.25em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease; /* slightly faster transition */
+  box-shadow: 0 4px 8px -2px rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px); /* slightly higher lift */
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.12), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+button:active {
+  transform: translateY(0);
+}

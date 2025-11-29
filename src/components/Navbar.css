@@ -1,0 +1,58 @@
+/* --------------------- Navbar Container --------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  /* Glass effect background */
+  background: rgba(13, 202, 101, 0.15); /* soft white glass */
+  backdrop-filter: blur(15px); /* standard blur */
+  -webkit-backdrop-filter: blur(15px); /* webkit fallback */
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px; /* rounded bottom corners */
+}
+
+/* --------------------- Brand / Logo --------------------- */
+.navbar-brand a {
+  font-size: 1.6rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #ff6b6b, #f7d794); /* fresh gradient */
+  background-clip: text; /* standard property added */
+  -webkit-background-clip: text; /* webkit fallback */
+  -webkit-text-fill-color: transparent; /* transparent text to show gradient */
+  text-decoration: none;
+  letter-spacing: 1px; /* modern spacing */
+}
+
+/* --------------------- Navigation Links --------------------- */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link styling */
+.navbar-links a {
+  color: #e0e0e0; /* soft gray */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px; /* subtle rounded effect */
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+  color: #db2985; /* green highlight */
+  background-color: rgba(47, 146, 88, 0.1); /* subtle hover background */
+  text-decoration: none;
+}
