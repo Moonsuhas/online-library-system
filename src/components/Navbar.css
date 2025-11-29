@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 10rem;
 
   /* Glass effect background */
-  background: rgba(13, 202, 101, 0.15); /* soft white glass */
+  background: rgba(20, 202, 105, 0.15); /* soft white glass */
   backdrop-filter: blur(15px); /* standard blur */
   -webkit-backdrop-filter: blur(15px); /* webkit fallback */
 

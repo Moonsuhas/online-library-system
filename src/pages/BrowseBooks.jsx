@@ -26,7 +26,7 @@ const BrowseBooks = () => {
       {/* Search bar */}
       <input
         type="text"
-        placeholder="🔍 Search by title or author..."
+        placeholder="🔍 Search by author or title..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-bar"
@@ -46,12 +46,12 @@ const BrowseBooks = () => {
               <p className="book-author">By: {book.author}</p>
               <p className="book-category">Category: {book.category}</p>
               <Link to={`/book/${book.id}`} className="details-link">
-                View Details →
+                View Detail →
               </Link>
             </div>
           ))
         ) : (
-          <p className="no-results">No books found matching your search 😕</p>
+          <p className="no-results">No books found in your search 😕</p>
         )}
       </div>
     </div>

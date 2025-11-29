@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Brand/logo section */}
       <div className="navbar-brand">
-        <Link to="/" className="brand-link">📚 MyLibrary Cloud</Link>
+        <Link to="/" className="brand-link">📚MyLibrary Cloud</Link>
       </div>
 
       {/* Navigation links */}
