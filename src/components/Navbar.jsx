@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-// Navbar component for the Online Library System
+// Navbar components for the Online Library System website
 // Contains site logo/brand and navigation links to main pages
 const Navbar = () => {
   return (
