@@ -49,7 +49,7 @@ const AddBook = () => {
       return;
     }
 
-    // Create new book object with unique ID
+    // Create new book objects with unique ID 
     const newBook = {
       id: Date.now(),
       ...formData,
