@@ -14,10 +14,10 @@ import { store } from './redux/store';
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
-// Rendering the app inside StrictMode and Redux Provider
+// Rendering the app inside StrictMode and Redux Provider 
 root.render(
   <StrictMode>
-    {/* Redux Provider makes the store available to all components */}
+    {/* Redux Provider makes the store available to all component */}
     <Provider store={store}>
       <App />
     </Provider>
