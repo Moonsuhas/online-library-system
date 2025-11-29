@@ -90,7 +90,7 @@ const booksSlice = createSlice({
   },
 });
 
-// Export the action for adding books
+// Export the action for adding book
 export const { addBook } = booksSlice.actions;
 
 // Export the reducer to be used in the store
