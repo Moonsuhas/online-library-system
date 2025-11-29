@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="home-page">
       {/* Welcome message */}
-      <h1 className="home-title">📚 Welcome to MyLibraryCloud </h1>
+      <h1 className="home-title">📚 Welcome to MyLibraryCloud</h1>
 
       {/* Categories Section */}
       <section className="categories-section">
